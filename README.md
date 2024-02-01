@@ -1,5 +1,19 @@
 # HealthcareUi
 
+
+# Backend Repo
+https://github.com/VTrendZLabs/HealthCare-API
+
+# Features
+Dashboard <br />
+Billing <br />
+Prescription <br />
+TeleConsult <br />
+Appointment <br />
+
+
+# Development Details
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
 ## Development server
