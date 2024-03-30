@@ -1,9 +1,5 @@
 # HealthcareUi
 
-
-# Backend Repo
-https://github.com/VTrendZLabs/HealthCare-API
-
 # Features
 Dashboard <br />
 Billing <br />
