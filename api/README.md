@@ -1,7 +1,4 @@
-# healthcare
-
-# Frontend Repo
-https://github.com/VTrendZLabs/HealthCare-UI
+# healthcare API
 
 # Features
 Dashboard <br />
