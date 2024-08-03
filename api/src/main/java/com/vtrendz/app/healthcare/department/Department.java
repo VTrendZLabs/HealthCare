@@ -1,14 +1,12 @@
 package com.vtrendz.app.healthcare.department;
 
-import com.vtrendz.app.healthcare.doctor.Doctor;
+import com.vtrendz.app.healthcare.provider.Provider;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
-import static jakarta.persistence.CascadeType.ALL;
+import java.util.Set;
 
 @Entity
 @Data
@@ -16,14 +14,14 @@ import static jakarta.persistence.CascadeType.ALL;
 @NoArgsConstructor
 public class Department {
 
-    @Id
-    @GeneratedValue
-    @Column(name="id")
-    private Long id;
+  @Id
+  @GeneratedValue
+  @Column(name = "id")
+  private Long id;
 
-    @Column(name="name", unique=true)
-    private String name;
+  @Column(name = "name", unique = true)
+  private String name;
 
-    @OneToMany(targetEntity= Doctor.class, cascade=ALL, mappedBy="department", fetch= FetchType.LAZY)
-    private List<Doctor> doctors;
+  @ManyToMany(mappedBy = "departments")
+  private Set<Provider> providers;
 }
