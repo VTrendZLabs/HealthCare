@@ -13,7 +13,7 @@ import java.util.Optional;
 import java.util.Set;
 
 @RestController
-@RequestMapping("/provider")
+@RequestMapping("/api/v1/provider")
 public class ProviderController {
   private static final Logger LOGGER = LoggerFactory.getLogger(ProviderController.class);
 
